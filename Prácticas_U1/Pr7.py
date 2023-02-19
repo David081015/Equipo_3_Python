@@ -13,4 +13,4 @@ if op == 1:
     print(fecha)
 else:
     fecha= date.today()
-    print(fecha.__format__(+"%m-%d-%Y"))
+    print(fecha.__format__("%m-%d-%Y"))
