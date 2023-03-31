@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Listado de Personas</h1>
+    <table border = "1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>ID mascota</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for persona in personas %}
+                <tr>
+                    <td>{{persona.id}}</td>
+                    <td>{{persona.nombre}}{{persona.apellido}}</td>
+                    <td>{{persona.edad}}</td>
+                    <td>{{persona.mascota}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Listado de Tiendas</h1>
+    <table border = "1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Color</th>
+                <th>Horario</th>
+                <th>ID fritos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for tienda in tiendas %}
+                <tr>
+                    <td>{{tienda.id}}</td>
+                    <td>{{tienda.nombre}}</td>
+                    <td>{{tienda.color}}</td>
+                    <td>{{tienda.horario}}</td>
+                    <td>{{tienda.frito}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Listado de Celulares</h1>
+    <table border = "1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>RAM</th>
+                <th>Memoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for celular in celulares %}
+                <tr>
+                    <td>{{celular.id}}</td>
+                    <td>{{celular.marca}}</td>
+                    <td>{{celular.ram}}</td>
+                    <td>{{celular.memoria}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
