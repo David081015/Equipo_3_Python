@@ -1,0 +1,172 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:19:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:19:57] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:19:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:20:05] "GET /agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:21:03] "[32mPOST /agregar HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:21:03] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:21:04] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:21:04] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:21:04] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:21:04] "[36mGET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:23:06] "GET /agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:23:20] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:30:38] "GET /agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:31:17] "[32mPOST /agregar HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:31:17] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:31:19] "GET /editar/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:31:27] "[32mPOST /editar/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:31:27] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:38:31] "GET /detalle/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:38:37] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:39:37] "GET /agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:39:41] "[32mPOST /agregar HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:39:41] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:39:43] "[32mGET /eliminar/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:39:43] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:40:05] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:42:10] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:43:01] "GET /agregarPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:43:22] "[32mPOST /agregarPelicula HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:43:22] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:43:23] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:43:52] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:46:37] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:46:38] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:46:38] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:46:39] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:46:39] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:46:39] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:47:06] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:49:56] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:54:04] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:55:15] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:55:16] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:55:16] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:55:16] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:55:16] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:55:16] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:55:32] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:58:02] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:59:02] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 22:59:03] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:35] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:36] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:36] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:36] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:36] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:36] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:36] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:37] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:37] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:45] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:00:45] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:02:45] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:02:45] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:02:45] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:02:47] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:30] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:30] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:30] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:30] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:30] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:30] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:30] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:31] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:03:31] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Equipo_3_Python\\Prácticas_U2\\Pr3\\routes\\peliculas\\peliculas.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:04:13] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:04:50] "GET /detallePelicula/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:04:51] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:04:53] "GET /editarPelicula/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:05:03] "[32mPOST /editarPelicula/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:05:03] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:05:56] "GET /agregarPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:06:01] "[32mPOST /agregarPelicula HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:06:01] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:06:02] "[32mGET /eliminarPelicula/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:06:02] "GET /indexPelicula HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:42:20] "[31m[1mGET /equipofut/agregar HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:45:58] "POST /equipofut/agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:46:33] "GET /equipofut/obtener HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:46:48] "POST /equipofut/agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:46:51] "GET /equipofut/obtener HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:49:42] "[35m[1mPOST /equipofut/editar HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:52:51] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:52:53] "GET /index HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:52:55] "GET /agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:52:58] "GET /editar/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:53:05] "[33mPOST /equipofut/editar/2 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:53:15] "[35m[1mPOST /equipofut/editar HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:56:51] "[31m[1mGET /equipofut/editar HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:57:00] "[35m[1mPOST /equipofut/editar HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:57:16] "POST /equipofut/editar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:57:24] "GET /equipofut/obtener HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:58:09] "GET /equipofut/obtener HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:58:18] "POST /equipofut/agregar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:58:21] "GET /equipofut/obtener HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:59:01] "[35m[1mPOST /equipofut/eliminar HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:59:24] "POST /equipofut/eliminar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Mar/2023 23:59:51] "POST /equipofut/editar HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 928-497-136
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2023 12:34:05] "GET /pelicula/obtener HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Apr/2023 12:38:47] "POST /pelicula/agregar HTTP/1.1" 200 -

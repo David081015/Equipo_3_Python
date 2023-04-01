@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Listado de videojuegos</h1>
+    <div>
+        <a href="{{url_for('appvideojuego.agregar')}}">Agregar Videojuego</a>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Plataforma</th>
+                    <th>Empresa</th>
+                    <th>Precio</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for videojuego in videojuegos%}
+                <tr>
+                    <td>{{videojuego.id}}</td>
+                    <td>{{videojuego.nombre}}</td>
+                    <td>{{videojuego.plataforma}}</td>
+                    <td>{{videojuego.empresa}}</td>
+                    <td>{{videojuego.precio}}</td>
+                    <td><a href="detalle/{{videojuego.id}}">Detalle</a></td>
+                    <td><a href="editar/{{videojuego.id}}">Editar</a></td>
+                    <td><a href="eliminar/{{videojuego.id}}">Eliminar</a></td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

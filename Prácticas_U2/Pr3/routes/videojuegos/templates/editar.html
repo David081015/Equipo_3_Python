@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Editar videojuego</h1>
+    <form method="POST">
+        {{forma.csrf_token}}
+        <p>
+            {{forma.nombre.label}}<br/>
+            {{forma.nombre(size=30)}}
+        </p>
+        <p>
+            {{forma.plataforma.label}}<br/>
+            {{forma.plataforma(size=30)}}
+        </p>
+        <p>
+            {{forma.empresa.label}}<br/>
+            {{forma.empresa(size=30)}}
+        </p>
+        <p>
+            {{forma.precio.label}}<br/>
+            {{forma.precio(size=30)}}
+        </p>
+        <p>
+            {{forma.enviar()}}
+        </p>
+    </form>
+</body>
+</html>
