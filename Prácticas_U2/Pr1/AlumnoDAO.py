@@ -39,9 +39,20 @@ class AlumnoDAO:
         
 if __name__ == "__main__":
     #insertar
-    alumno = Alumno(nombre="Pedro",apellido="Pascal",edad=45)
+    alumno = Alumno(nombre="Daniel",apellido="Pascal",edad=23)
     alumnosInsertados = AlumnoDAO.insertar(alumno)
     log.debug(f"Alumnos Agregados {alumnosInsertados}")
+
+    #actualizar
+    alumno = Alumno(nombre="David",apellido="Castillo",edad=22,num_control="2")
+    alumnosActualizados = AlumnoDAO.actualizar(alumno)
+    log.debug(f"Alumnos Actualizados {alumnosActualizados}")
+
+    #eliminar
+    alumno = Alumno(num_control=3)
+    alumnosEliminados = AlumnoDAO.eliminar(alumno)
+    log.debug(f"Alumnos Eliminados {alumnosEliminados}")
+
     #Leer
     alumnos = AlumnoDAO.seleccionar()
     for a in alumnos:

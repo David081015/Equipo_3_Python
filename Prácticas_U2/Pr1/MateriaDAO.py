@@ -39,9 +39,20 @@ class MateriaDAO:
         
 if __name__ == "__main__":
     #insertar
-    materia = Materia(nombre="Python",creditos=5)
-    materiasInsertadas = MateriaDAO.insertar(materia)
-    log.debug(f"Materias Agregadas {materiasInsertadas}")
+    # materia = Materia(nombre="C",creditos=11)
+    # materiasInsertadas = MateriaDAO.insertar(materia)
+    # log.debug(f"Materias Agregadas {materiasInsertadas}")
+
+    #actualizar
+    # materia = Materia(nombre="C#",creditos=6,idmateria="2")
+    # materiasActualizadas = MateriaDAO.actualizar(materia)
+    # log.debug(f"Materias Actualizadas {materiasActualizadas}")
+
+    #eliminar
+    # materia = Materia(idmateria=3)
+    # materiasEliminadas = MateriaDAO.eliminar(materia)
+    # log.debug(f"Materias Eliminadas {materiasEliminadas}")
+
     #Leer
     materias = MateriaDAO.seleccionar()
     for m in materias:

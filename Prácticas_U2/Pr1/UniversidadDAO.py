@@ -39,9 +39,20 @@ class UniversidadDAO:
         
 if __name__ == "__main__":
     #insertar
-    universidad = Universidad(nombre="TEC",direccion="Reforma")
+    universidad = Universidad(nombre="UAT",direccion="Lejos")
     universidadesInsertadas = UniversidadDAO.insertar(universidad)
     log.debug(f"Universidades Agregadas {universidadesInsertadas}")
+
+    #actualizar
+    universidad = Universidad(nombre="UT",direccion="Rancho", iduniversidad="2")
+    universidadesActualizadas = UniversidadDAO.actualizar(universidad)
+    log.debug(f"universidades Actualizadas {universidadesActualizadas}")
+
+    #eliminar
+    universidad = Universidad(iduniversidad=3)
+    universidadesEliminadas = UniversidadDAO.eliminar(universidad)
+    log.debug(f"universidades Eliminadas {universidadesEliminadas}")
+
     #Leer
     universidades = UniversidadDAO.seleccionar()
     for u in universidades:

@@ -1,0 +1,105 @@
+12:07:11:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:07:11:PM: DEBUG [Conexion.py] :28 Creacion del pool <psycopg2.pool.SimpleConnectionPool object at 0x0000022BDDA78880>
+12:07:11:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x0000022BDEEB86A0; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:07:11:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:07:11:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x0000022BDEEB86A0; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:07:11:PM: DEBUG [MateriaDAO.py] :44 Materias Agregadas 1
+12:07:11:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:07:11:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x0000022BDEEB86A0; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:07:11:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:07:11:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x0000022BDEEB86A0; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:07:11:PM: DEBUG [MateriaDAO.py] :48 
+        ID materia: 1
+        Nombre: Python
+        Creditos: 5
+        
+12:07:11:PM: DEBUG [MateriaDAO.py] :48 
+        ID materia: 2
+        Nombre: C++
+        Creditos: 11
+        
+12:13:34:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:13:34:PM: DEBUG [Conexion.py] :28 Creacion del pool <psycopg2.pool.SimpleConnectionPool object at 0x0000019062A488B0>
+12:13:34:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x000001906274B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:34:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:13:34:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x000001906274B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:34:PM: DEBUG [MateriaDAO.py] :49 Materias Actualizadas 1
+12:13:34:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:13:34:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x000001906274B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:34:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:13:34:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x000001906274B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:34:PM: DEBUG [MateriaDAO.py] :54 
+        ID materia: 1
+        Nombre: Python
+        Creditos: 5
+        
+12:13:34:PM: DEBUG [MateriaDAO.py] :54 
+        ID materia: 2
+        Nombre: C++
+        Creditos: 11
+        
+12:13:56:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:13:56:PM: DEBUG [Conexion.py] :28 Creacion del pool <psycopg2.pool.SimpleConnectionPool object at 0x0000018BBCD088E0>
+12:13:56:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x0000018BBC9FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:56:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:13:56:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x0000018BBC9FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:56:PM: DEBUG [MateriaDAO.py] :49 Materias Actualizadas 1
+12:13:56:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:13:56:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x0000018BBC9FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:56:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:13:56:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x0000018BBC9FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:13:56:PM: DEBUG [MateriaDAO.py] :54 
+        ID materia: 1
+        Nombre: Python
+        Creditos: 5
+        
+12:13:56:PM: DEBUG [MateriaDAO.py] :54 
+        ID materia: 2
+        Nombre: C#
+        Creditos: 6
+        
+12:17:02:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:17:02:PM: DEBUG [Conexion.py] :28 Creacion del pool <psycopg2.pool.SimpleConnectionPool object at 0x00000265F8B088B0>
+12:17:02:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x00000265F87FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:17:02:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:17:02:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x00000265F87FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:17:02:PM: DEBUG [MateriaDAO.py] :44 Materias Agregadas 1
+12:17:02:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:17:02:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x00000265F87FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:17:02:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:17:02:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x00000265F87FB780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:17:02:PM: DEBUG [MateriaDAO.py] :54 
+        ID materia: 1
+        Nombre: Python
+        Creditos: 5
+        
+12:17:02:PM: DEBUG [MateriaDAO.py] :54 
+        ID materia: 2
+        Nombre: C#
+        Creditos: 6
+        
+12:17:02:PM: DEBUG [MateriaDAO.py] :54 
+        ID materia: 3
+        Nombre: C
+        Creditos: 11
+        
+12:18:31:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:18:31:PM: DEBUG [Conexion.py] :28 Creacion del pool <psycopg2.pool.SimpleConnectionPool object at 0x0000023D3D748910>
+12:18:31:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x0000023D3D43B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:18:31:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:18:31:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x0000023D3D43B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:18:31:PM: DEBUG [MateriaDAO.py] :54 Materias Eliminadas 1
+12:18:31:PM: DEBUG [cursorDelPool.py] :10 Entra with
+12:18:31:PM: DEBUG [Conexion.py] :38 Conexion obtendida <connection object at 0x0000023D3D43B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:18:31:PM: DEBUG [cursorDelPool.py] :16 Sale with
+12:18:31:PM: DEBUG [Conexion.py] :44 Conexion regresada:<connection object at 0x0000023D3D43B780; dsn: 'user=postgres password=xxx dbname=pr1_u2 host=127.0.0.1 port=5432', closed: 0>
+12:18:31:PM: DEBUG [MateriaDAO.py] :59 
+        ID materia: 1
+        Nombre: Python
+        Creditos: 5
+        
+12:18:31:PM: DEBUG [MateriaDAO.py] :59 
+        ID materia: 2
+        Nombre: C#
+        Creditos: 6
+        
