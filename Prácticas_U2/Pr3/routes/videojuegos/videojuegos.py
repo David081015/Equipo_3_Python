@@ -5,6 +5,7 @@ from app import db
 
 appvideojuego = Blueprint('appvideojuego',__name__,template_folder="templates")
 
+@appvideojuego.route('/')
 @appvideojuego.route('/index')
 def inicio():
     videojuegos = Videojuego.query.all()
