@@ -16,7 +16,28 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from gestorapp.views import *
+from repartidores.views import *
+from dueños.views import *
+from pizzas.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',index,name='index'),
+    path('indexRepartidores',indexRepartidores,name='indexRepartidores'),
+    path('nuevoRepartidor',nuevoRepartidor),
+    path('editarRepartidor/<int:id>',editarRepartidor),
+    path('eliminarRepartidor/<int:id>',eliminarRepartidor),
+    path('detalleRepartidor/<int:id>',detalleRepartidor),
+
+    path('indexDueños',indexDueños,name='indexDueños'),
+    path('nuevoDueño',nuevoDueño),
+    path('editarDueño/<int:id>',editarDueño),
+    path('eliminarDueño/<int:id>',eliminarDueño),
+    path('detalleDueño/<int:id>',detalleDueño),
+
+    path('indexPizzas',indexPizzas,name='indexPizzas'),
+    path('nuevaPizza',nuevaPizza),
+    path('editarPizza/<int:id>',editarPizza),
+    path('eliminarPizza/<int:id>',eliminarPizza),
+    path('detallePizza/<int:id>',detallePizza)
 ]

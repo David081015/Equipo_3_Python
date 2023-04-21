@@ -1,0 +1,9 @@
+{% block body %}
+    <h1>
+        {{dueño.id}}
+        {{dueño.nombre}}
+        {{dueño.apellido}}
+        {{dueño.numtelefono}}
+    </h1>
+    <a href="{% url 'indexDueños'%}">Regresar al listado</a>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% block body %}
+    <form action="" method="POST">
+        <h1>Editar Repartidor</h1>
+        <table>
+            {{formaRepartidor}}
+        </table>
+        <input class="btn btn-success" type="submit" value="Enviar"></input>
+        {%csrf_token%}
+    </form>
+{% endblock %}

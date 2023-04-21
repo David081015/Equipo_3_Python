@@ -1,0 +1,12 @@
+{% block body %}
+<div class="container">
+    <form action="" method="POST">
+        <h1>Agregar Repartidor</h1>
+        <table>
+            {{formaRepartidor}}
+        </table>
+        <button type="submit">Enviar</button>
+        {%csrf_token%}
+    </form>
+</div>
+{% endblock %}

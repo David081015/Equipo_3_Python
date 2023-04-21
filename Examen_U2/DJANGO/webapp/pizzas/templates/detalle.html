@@ -1,0 +1,9 @@
+{% block body %}
+    <h1>
+        {{pizza.id}}
+        {{pizza.ingredientes}}
+        {{pizza.tamaño}}
+        {{pizza.precio}}
+    </h1>
+    <a href="{% url 'indexPizzas'%}">Regresar al listado</a>
+{% endblock %}

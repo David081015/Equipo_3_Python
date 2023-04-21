@@ -1,0 +1,9 @@
+{% block body %}
+    <h1>
+        {{repartidor.id}}
+        {{repartidor.nombre}}
+        {{repartidor.apellido}}
+        {{repartidor.email}}
+    </h1>
+    <a href="{% url 'indexRepartidores'%}">Regresar al listado</a>
+{% endblock %}

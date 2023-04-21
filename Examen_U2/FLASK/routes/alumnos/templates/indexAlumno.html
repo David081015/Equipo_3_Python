@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/inicio.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Listado de peliculas</h1>
+    <div>
+        <a href="{{url_for('appalumno.agregar')}}">Agregar Pelicula</a>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Promedio</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for alumno in alumnos%}
+                <tr>
+                    <td>{{alumno.id}}</td>
+                    <td>{{alumno.nombre}}</td>
+                    <td>{{alumno.duracion}}</td>
+                    <td>{{alumno.categoria}}</td>
+                    <td><a href="detalleAlumno/{{alumno.id}}">Detalle</a></td>
+                    <td><a href="editarAlumno/{{alumno.id}}">Editar</a></td>
+                    <td><a href="eliminarAlumno/{{alumno.id}}">Eliminar</a></td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

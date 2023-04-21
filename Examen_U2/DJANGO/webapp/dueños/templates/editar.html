@@ -1,0 +1,10 @@
+{% block body %}
+    <form action="" method="POST">
+        <h1>Editar Dueño</h1>
+        <table>
+            {{formaDueño}}
+        </table>
+        <input class="btn btn-success" type="submit" value="Enviar"></input>
+        {%csrf_token%}
+    </form>
+{% endblock %}
