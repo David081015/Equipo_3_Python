@@ -3,7 +3,7 @@ import datetime
 from config import BasicConfig
 from app import db,bcrypt
 
-class Imagenes(db.Model):
+class Imagen(db.Model):
     __tablename__='user_images'
     id = db.Column(db.Integer,primary_key=True)
     type = db.Column(db.String(128),nullable=False)
