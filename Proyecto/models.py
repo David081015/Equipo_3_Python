@@ -31,7 +31,7 @@ class Usuario(db.Model):
     def encode_auth_token(self,user_id):
         try:
             payload={
-                'exp':datetime.datetime.utcnow()+datetime.timedelta(days=0,minutes=10),
+                'exp':datetime.datetime.utcnow()+datetime.timedelta(days=0,minutes=60),
                 'iat':datetime.datetime.utcnow(),
                 'sub':user_id
             }
@@ -61,6 +61,6 @@ class Usuario(db.Model):
 class Pan(db.Model):
     __tablename__="breads"
     id = db.Column(db.Integer,primary_key=True,autoincrement=True)
-    nombre = db.Column(db.String(255),unique=True,nullable=False)
+    nombre = db.Column(db.String(255),nullable=False)
     precio = db.Column(db.String(255),nullable=False)
     cantidad = db.Column(db.String(255),nullable=False)
