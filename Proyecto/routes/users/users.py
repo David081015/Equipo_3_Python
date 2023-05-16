@@ -25,10 +25,18 @@ def getUsers(usuario):
         return jsonify({'usuarios':response})  
     else: 
         return jsonify({"message":"Acceso denegado"}) 
-     
+
+@appuser.route('/')
+def index():
+    return render_template('index.html')
+
 @appuser.route('/main')
 def main():
     return render_template('main.html')
+
+@appuser.route('/mainAdmin')
+def mainAdmin():
+    return render_template('mainAdmin.html')
 
 @appuser.route('/bread')
 def bread():
@@ -61,6 +69,7 @@ def login_post():
                     'status':'success',
                     'message':'Loggin exitoso',
                     'auth_token':auth_token,
+                    'user_bool': userFilter.admin
                 }
                 return jsonify(response)
         return jsonify({"message":"Datos incorrectos"})

@@ -20,6 +20,20 @@ body {
     text-align: justify;
     margin: 20px;
   }
+
+  ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+  }
+
+  ol li {
+    margin: 10px 0;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px;
+  }
   
   /* Estilos adicionales */
   section {
