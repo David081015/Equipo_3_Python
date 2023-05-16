@@ -30,7 +30,11 @@ def getUsers(usuario):
 def main():
     return render_template('main.html')
 
-@appuser.route('/login/user',methods=["GET","POST"])
+@appuser.route('/bread')
+def bread():
+    return render_template('bread.html')
+
+@appuser.route('/login',methods=["GET","POST"])
 def login_post():
     if(request.method=="GET"):
         token = request.args.get('token')
