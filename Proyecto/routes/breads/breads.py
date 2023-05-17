@@ -13,7 +13,7 @@ def bread():
 def inicio():
     panes = Pan.query.all()
     totalDePanes = Pan.query.count()
-    return render_template('index.html',panes = panes, totalDePanes = totalDePanes)
+    return render_template('lista.html',panes = panes, totalDePanes = totalDePanes)
 
 @appbread.route('/agregarpan',methods=["GET","POST"])
 def agregar():

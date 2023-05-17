@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/static/barra.css">
+    <link rel="stylesheet" href="/static/estilo.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/static/app.js" async></script>
+    <title>Bread</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">   
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="main" class="enlace">
+            <img src="/static/LOGO.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="agregarpan">Agregar pan</a></li>
+            <li><a class="active" href="listapanes">Listas</a></li>
+            <li><a href="login">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+<section>
+    <header>
+        
+    </header>
+    <section class="contenedor">
+        <div>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for pan in panes%}
+                    <tr>
+                        <td>{{pan.id}}</td>
+                        <td>{{pan.nombre}}</td>
+                        <td>{{pan.precio}}</td>
+                        <td>{{pan.cantidad}}</td>
+                        <td><a href="editar/{{pan.id}}">Editar</a></td>
+                        <td><a href="eliminar/{{pan.id}}">Eliminar</a></td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+</body>
+</html>

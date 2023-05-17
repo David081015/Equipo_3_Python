@@ -38,10 +38,6 @@ def main():
 def mainAdmin():
     return render_template('mainAdmin.html')
 
-@appuser.route('/bread')
-def bread():
-    return render_template('bread.html')
-
 @appuser.route('/login',methods=["GET","POST"])
 def login_post():
     if(request.method=="GET"):
