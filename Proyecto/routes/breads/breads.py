@@ -5,6 +5,10 @@ from app import db
 
 appbread = Blueprint('appbread',__name__,template_folder="templates")
 
+@appbread.route('/bread')
+def bread():
+    return render_template('bread.html')
+
 @appbread.route('/listapanes')
 def inicio():
     panes = Pan.query.all()
