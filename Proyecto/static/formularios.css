@@ -38,15 +38,18 @@ input[type="password"] {
 button[type="submit"] {
     background-color: #8d6e63;
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px; /* Aumentar el padding para hacerlo más grande */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px; /* Aumentar el radio de borde para hacerlo más redondeado */
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px; /* Aumentar el tamaño de fuente para hacerlo más visible */
+    font-weight: bold; /* Añadir negrita para hacerlo más destacado */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
 }
 
 button[type="submit"]:hover {
     background-color: #654321;
+    transform: scale(1.05); /* Añadir una ligera animación de escala al pasar el cursor */
 }
 
 a {
@@ -55,4 +58,21 @@ a {
     color: #333;
     text-decoration: none;
     text-align: center;
+}
+
+.submit-button {
+    background-color: #8d6e63;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.submit-button:hover {
+    background-color: #654321;
+    transform: scale(1.05);
 }

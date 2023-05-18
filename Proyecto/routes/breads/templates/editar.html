@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/static/formulario.css">
+    <link rel="stylesheet" href="/static/formularios.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,9 +23,7 @@
             {{forma.cantidad.label}}<br/>
             {{forma.cantidad(size=30)}}
         </p>
-        <p>
-            {{forma.enviar()}}
-        </p>
+        {{ forma.enviar(class="submit-button") }}
     </form>
 </body>
 </html>
