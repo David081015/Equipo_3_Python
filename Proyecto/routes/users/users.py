@@ -16,6 +16,7 @@ def getUsers(usuario):
         for usuario in usuarios:
             usuarioData={
                 'id':usuario.id,
+                'nombre':usuario.nombre,
                 'email':usuario.email,
                 'password':usuario.password,
                 'registrado':usuario.registrado,
@@ -32,11 +33,17 @@ def index():
 
 @appuser.route('/main')
 def main():
-    return render_template('main.html')
+    nombre_usuario = request.args.get('nombre_usuario')
+    return render_template('main.html', nombre_usuario=nombre_usuario)
 
 @appuser.route('/mainAdmin')
 def mainAdmin():
     return render_template('mainAdmin.html')
+
+@appuser.route('/perfil')
+def perfil():
+    nombre_usuario = request.args.get('nombre_usuario') # Obtener el nombre de usuario de la URL
+    return render_template('perfil.html', nombre_usuario=nombre_usuario)
 
 @appuser.route('/login',methods=["GET","POST"])
 def login_post():
@@ -55,7 +62,9 @@ def login_post():
     else:
         email = request.json['email']
         password=request.json['password']
-        usuario = Usuario(email=email,password=password)
+        consulta= Usuario.query.filter_by(email=email).first()
+        nombre = consulta.nombre
+        usuario = Usuario(nombre=nombre,email=email,password=password)
         userFilter=Usuario.query.filter_by(email=usuario.email).first()
         if userFilter:
             validation=bcrypt.check_password_hash(userFilter.password,password)
@@ -65,7 +74,8 @@ def login_post():
                     'status':'success',
                     'message':'Loggin exitoso',
                     'auth_token':auth_token,
-                    'user_bool': userFilter.admin
+                    'user_bool': userFilter.admin,
+                    'nombre_usuario': userFilter.nombre
                 }
                 return jsonify(response)
         return jsonify({"message":"Datos incorrectos"})
@@ -75,9 +85,10 @@ def registrar():
     if request.method=="GET":
         return render_template('registrar.html')
     else:
+        nombre = request.json["nombre"]
         email = request.json["email"]
         password=request.json["password"]
-        usuario = Usuario(email=email,password=password)
+        usuario = Usuario(nombre=nombre,email=email,password=password)
         userExists=Usuario.query.filter_by(email=email).first()
         if not userExists:
             try:   

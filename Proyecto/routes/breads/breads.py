@@ -1,4 +1,4 @@
-from flask import Blueprint, request, render_template, redirect,url_for, jsonify
+from flask import Blueprint, request, render_template, redirect,url_for
 from models import Pan
 from forms import PanForm
 from app import db

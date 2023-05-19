@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/perfil.css">
+    <link rel="stylesheet" href="/static/barra.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pefil</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="/static/LOGO.png" alt="" class="logo" id="logo">
+        <ul>
+            <li><a href="bread">Tienda</a></li>
+            <li><a class="active" href="perfil">Perfil</a></li>
+            <li><a href="login">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+<section>
+    <header>
+        
+    </header>
+    <section class="perfil-usuario">
+        <div class="contenedor-perfil">
+            <div class="portada-perfil" style="background-image: url('/static/img/header.jpg');">
+                <div class="sombra"></div>
+                <div class="avatar-perfil">
+                    <img src="/static/Perfil.jpg" alt="img">
+                    <a href="#" class="cambiar-foto">
+                        <i class="fas fa-camera"></i> 
+                        <span>Cambiar foto</span>
+                    </a>
+                </div>
+                <div class="datos-perfil">
+                    <h4 class="titulo-usuario">{{ nombre_usuario }}</h4>
+                    <p class="bio-usuario">Tus promesas jamás fueron hechos.</p>
+                    <ul class="lista-perfil">
+                        <li>1M Seguidores</li>
+                        <li>1 Seguidos</li>
+                        <li>19100 Publicaciones</li>
+                    </ul>
+                </div>
+                <div class="opcciones-perfil">
+                    <button type="">Cambiar portada</button>
+                    <button type=""><i class="fas fa-wrench"></i></button>
+                </div>
+            </div>
+            <div class="menu-perfil">
+                <ul>
+                    <li><a href="#" title=""><i class="icono-perfil fas fa-bullhorn"></i> Publicaciones</a></li>
+                    <li><a href="#" title=""><i class="icono-perfil fas fa-info-circle"></i> Informacion</a></li>
+                    <li><a href="#" title=""><i class="icono-perfil fas fa-grin"></i> Amigos 3306</a></li>
+                    <li><a href="#" title=""><i class="icono-perfil fas fa-camera"></i> Fotos</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</section>
+</body>
+<script>
+    // Obtener referencia al elemento de la imagen
+    const logo = document.getElementById("logo");
+    // Agregar evento de clic al elemento de la imagen
+    logo.addEventListener("click", function() {
+      window.location.href = "/main";
+    });
+  </script>
+</html>

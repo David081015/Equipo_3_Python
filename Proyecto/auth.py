@@ -11,6 +11,7 @@ def obtenerInfo(token):
                 'status':'success',
                 'data': {
                     'user_id':user.id,
+                    'nombre':user.nombre,
                     'email':user.email,
                     'admin':user.admin,
                     'registrado':user.registrado

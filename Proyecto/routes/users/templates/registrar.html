@@ -10,6 +10,9 @@
 <body>
     <h1>Sign in</h1>
     <form id="sign-form">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
         <label for="email">Correo electrónico:</label>
         <input type="text" id="email" name="email">
         <br>
@@ -24,6 +27,7 @@
         const signButton=document.querySelector('#sign-btn')
         signButton.addEventListener('click',(e)=>{
             e.preventDefault();
+            const nombre = document.querySelector('#nombre').value
             const email =document.querySelector('#email').value
             const password =document.querySelector('#password').value
 
@@ -33,6 +37,7 @@
                     'Content-Type':'application/json'
                 },
                 body:JSON.stringify({
+                    'nombre':nombre,
                     'email':email,
                     'password':password
                 })

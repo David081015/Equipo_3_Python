@@ -3,24 +3,17 @@ import datetime
 from config import BasicConfig
 from app import db,bcrypt
 
-class Imagen(db.Model):
-    __tablename__='user_images'
-    id = db.Column(db.Integer,primary_key=True)
-    type = db.Column(db.String(128),nullable=False)
-    data = db.Column(db.LargeBinary,nullable=False)
-    rendered_data = db.Column(db.Text,nullable=False)
-    user_id = db.Column(db.Integer,db.ForeignKey('users.id'))
-    region = db.relationship('Usuario',backref='users')
-
 class Usuario(db.Model):
     __tablename__="users"
     id = db.Column(db.Integer,primary_key=True,autoincrement=True)
-    email=db.Column(db.String(255),unique=True,nullable=False)
-    password=db.Column(db.String(255),nullable=False)
-    registrado=db.Column(db.DateTime,nullable=False)
-    admin=db.Column(db.Boolean,nullable=False,default=False)
+    nombre = db.Column(db.String(255),nullable=False)
+    email = db.Column(db.String(255),unique=True,nullable=False)
+    password = db.Column(db.String(255),nullable=False)
+    registrado = db.Column(db.DateTime,nullable=False)
+    admin = db.Column(db.Boolean,nullable=False,default=False)
 
-    def __init__(self,email,password,admin=False):
+    def __init__(self,nombre,email,password,admin=False):
+        self.nombre=nombre
         self.email=email
         self.password=bcrypt.generate_password_hash(
             password,BasicConfig.BCRYPT_LOG_ROUNDS

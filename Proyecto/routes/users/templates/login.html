@@ -43,9 +43,10 @@
                     // Verificación exitosa del token de autenticación
                     localStorage.setItem('token', data.auth_token);
                     const userBool = data.user_bool; // Captura el valor de la variable
+                    const nombreUsuario = data.nombre_usuario; 
                     // Verfica si es administrador
                     if (userBool == false){
-                        window.location.href = '/main';
+                        window.location.href = '/main?nombre_usuario=' + nombreUsuario;
                     }
                     else{
                         window.location.href = '/mainAdmin';
