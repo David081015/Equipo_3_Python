@@ -46,6 +46,6 @@ def generatePdf():
     response.headers['Content-Disposition']='inline;filename=users.pdf'
     return response
 
-@apppdf.route('/Pdf')
+@apppdf.route('/pdf')
 def index():
     return render_template('indexPdf.html')

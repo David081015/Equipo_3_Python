@@ -17,8 +17,8 @@
         </label>
         <img src="/static/LOGO.png" alt="" class="logo" id="logo">
         <ul>
-            <li><a href="bread">Tienda</a></li>
-            <li><a class="active" href="perfil">Perfil</a></li>
+            <li><a href="bread?nombre_usuario={{ nombre_usuario }}">Tienda</a></li>
+            <li><a class="active" href="perfil?nombre_usuario={{ nombre_usuario }}">Perfil</a></li>
             <li><a href="login">Cerrar sesión</a></li>
         </ul>
     </nav>
@@ -68,7 +68,7 @@
     const logo = document.getElementById("logo");
     // Agregar evento de clic al elemento de la imagen
     logo.addEventListener("click", function() {
-      window.location.href = "/main";
+      window.location.href = "/main?nombre_usuario={{ nombre_usuario }}";
     });
   </script>
 </html>

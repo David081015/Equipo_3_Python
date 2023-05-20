@@ -7,7 +7,8 @@ appbread = Blueprint('appbread',__name__,template_folder="templates")
 
 @appbread.route('/bread')
 def bread():
-    return render_template('bread.html')
+    nombre_usuario = request.args.get('nombre_usuario')
+    return render_template('bread.html', nombre_usuario=nombre_usuario)
 
 @appbread.route('/listapanes')
 def inicio():

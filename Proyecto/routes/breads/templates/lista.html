@@ -16,12 +16,14 @@
         <label for="check" class="checkbtn">   
             <i class="fas fa-bars"></i>
         </label>
-        <a href="main" class="enlace">
+        <a href="mainAdmin" class="enlace">
             <img src="/static/LOGO.png" alt="" class="logo">
         </a>
         <ul>
             <li><a href="agregarpan">Agregar pan</a></li>
-            <li><a class="active" href="listapanes">Listas</a></li>
+            <li><a class="active" href="listapanes">Inventario</a></li>
+            <li><a href="csv">Usuarios</a></li>
+            <li><a href="pdf">Reportes</a></li>
             <li><a href="login">Cerrar sesión</a></li>
         </ul>
     </nav>
@@ -49,8 +51,8 @@
                         <td>{{pan.nombre}}</td>
                         <td>{{pan.precio}}</td>
                         <td>{{pan.cantidad}}</td>
-                        <td><a href="editar/{{pan.id}}">Editar</a></td>
-                        <td><a href="eliminar/{{pan.id}}">Eliminar</a></td>
+                        <td><a href="editarpan/{{pan.id}}" class="enlace-tabla">Editar</a></td>
+                        <td><a href="eliminarpan/{{pan.id}}" class="enlace-tabla">Eliminar</a></td>
                     </tr>
                     {%endfor%}
                 </tbody>

@@ -234,3 +234,14 @@ table {
     background-color: #7A6561;
     color: white;
   }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+
+  .enlace-tabla {
+    color: black; /* Cambia el color a tu elección */
+  }
