@@ -1,0 +1,39 @@
+/*TABLAS*/
+table {
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+  
+  thead {
+    background-color: #665450;
+    border-bottom: solid 5px #58423D;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  tr:hover td {
+    background-color: #7A6561;
+    color: white;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según tus necesidades */
+  }
+
+  .enlace-tabla {
+    color: black; /* Cambia el color a tu elección */
+  }

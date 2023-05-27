@@ -28,6 +28,7 @@ def getUsers(usuario):
         return jsonify({"message":"Acceso denegado"}) 
 
 @appuser.route('/')
+@appuser.route('/index')
 def index():
     return render_template('index.html')
 
@@ -39,6 +40,14 @@ def main():
 @appuser.route('/mainAdmin')
 def mainAdmin():
     return render_template('mainAdmin.html')
+
+@appuser.route('/error')
+def error():
+    return render_template('error.html')
+
+@appuser.errorhandler(404)
+def paginaNoEncontrada(error):
+    return render_template('error.html', error=error),404
 
 @appuser.route('/perfil')
 def perfil():

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/static/barra.css">
+    <link rel="stylesheet" href="/static/estilo.css">
+    <link rel="stylesheet" href="/static/mainAdmin.css">
+    <title>PDF</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="mainAdmin" class="enlace">
+            <img src="/static/LOGO.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="listapanes">Inventario</a></li>
+            <li><a class="active" href="pdf">Reportes</a></li>
+            <li><a href="login">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+<section>
+    <header>
+        
+    </header>
+</section>
+    <h1>Reportes realizados</h1>
+    <button id="user-btn">Usuarios</button>
+    <br><br><br>
+    <button id="bread-btn">Panes</button>
+    <script>
+        $(document).ready(function(){
+            $('#user-btn').click(function(){
+                window.location.href='/usuariosPdf'
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#bread-btn').click(function(){
+                window.location.href='/panesPdf'
+            })
+        })
+    </script>
+</body>
+</html>
